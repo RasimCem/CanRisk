@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="332dp"
+        android:layout_height="612dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="157dp"
+                    android:layout_height="match_parent"
+                    android:text="CanRisk"
+                    android:textColor="#DD3E3E"
+                    android:textSize="30sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="155dp"
+                    android:layout_height="47dp"
+                    android:text="Are you at risk?"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The following questions will help you to find out if you are at higher risk of having pre-diabetes or type 2 diabetes. Pre-diabetes is a condition where a person’s blood sugar levels are higher than normal, but not high enough to be diagnosed as diabetes. You can have pre-diabetes or undiagnosed type 2 diabetes without having any obvious warning signs or symptoms. Knowing your risk can help you make healthy choices now that will reduce your risk or even prevent you from developing diabetes. Please answer the questions as honestly and completely as you can. If you wish, a friend or family member can help you to complete this form. The answers to these questions are completely confidential. Answer all questions. Enter your scores for each question in the box on the right-hand side and then add them up to calculate your total risk score." />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This questionnaire is intended for adults aged 40 to 74 years."
+                    android:textColor="#DD3E3E" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. Select your age group:"
+                    android:textColor="#000" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rg1">
+
+                    <RadioButton
+                        android:id="@+id/rgb1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="40-44 years" />
+
+                    <RadioButton
+                        android:id="@+id/rgb2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="45-54 years" />
+
+                    <RadioButton
+                        android:id="@+id/rgb3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="55-64 years" />
+
+                    <RadioButton
+                        android:id="@+id/rgb4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="65-74 years" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2. Are you male or female? "
+                    android:textColor="#000" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:id="@+id/rg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rg2b1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Male" />
+
+                    <RadioButton
+                        android:id="@+id/rg2b2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Female" />
+
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3. How tall are you and how much do you weigh?"
+                    android:textColor="#000" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="On the left-hand side of the BMI chart below, circle your height, then on the bottom of the chart circle your weight. Find the square on the chart where your height crosses with your weight, and note which shaded area you fall into. For example, if you were 5 feet 2 inches (or 157.5cm) and 163 pounds (or 74kg) you would fall in the LIGHT GREY area."
+                    android:textColor="#DD3E3E" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select your BMI group from the following choices:"
+                    android:textColor="#000" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:id="@+id/rg3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rg3b1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="White (BMI less than 25)" />
+
+                    <RadioButton
+                        android:id="@+id/rg3b2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Light Gray (BMI 25 to 29)" />
+
+                    <RadioButton
+                        android:id="@+id/rg3b3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Dark Gray (BMI 30 to 34)" />
+
+                    <RadioButton
+                        android:id="@+id/rg3b4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Black (BMI 35 and Over)" />
+
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    app:srcCompat="@drawable/canrisk" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4. Using a tape measure, place it around your waist at the level of your belly button. "
+                    android:textColor="#000" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Measure after breathing out (do not hold your breath) and write your results on the line below.
+                        Then check the box that contains your measurement. (Note: this is not the same as the “waist size” on your pants)."
+                    android:textColor="#DD3E3E" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:id="@+id/rg4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MEN – Waist circumference: _ _ _ inches OR _ _ _ cm " />
+
+                    <RadioButton
+                        android:id="@+id/rg4b1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Less than 94 cm or 37 inches" />
+
+                    <RadioButton
+                        android:id="@+id/rg4b2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Between 94-102 cm or 37-40 inches" />
+
+                    <RadioButton
+                        android:id="@+id/rg4b3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Over 102 cm or 40 inches" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WOMEN – Waist circumference: _ _ _ inches OR _ _ _ cm " />
+
+                    <RadioButton
+                        android:id="@+id/rg4b4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Less than 80 cm or 31.5 inches" />
+
+                    <RadioButton
+                        android:id="@+id/rg4b5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Between 80-88 cm or 31.5-35 inches" />
+
+                    <RadioButton
+                        android:id="@+id/rg4b6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Over 88 cm or 35 inches" />
+
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5. Do you usually do some physical activity such as brisk walking for at least 30 minutes each day?  "
+                    android:textColor="#000" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This activity can be done while at work or at home.  "
+                    android:textColor="#DD3E3E" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:id="@+id/rg5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rg5b1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/rg5b2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6. How often do you eat vegetables or fruits?  "
+                    android:textColor="#000" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:id="@+id/rg6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rg6b1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Every day" />
+
+                    <RadioButton
+                        android:id="@+id/rg6b2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Not every day" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7. Have you ever been told by a doctor or nurse that you have high blood pressure OR have you ever
+taken high blood pressure pills? "
+                    android:textColor="#000" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:id="@+id/rg7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rg7b1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/rg7b2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No or don’t know" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8. Have you ever been found to have a high blood sugar either from a blood test, during an illness,
+or during pregnancy? "
+                    android:textColor="#000" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:id="@+id/rg8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rg8b1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/rg8b2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No or don’t know" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9. Have you ever given birth to a large baby weighing 9 pounds (4.1 kg) or more?"
+                    android:textColor="#000" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:id="@+id/rg9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rg9b1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/rg9b2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No or don’t know" />
+                </RadioGroup>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10. Have any of your blood relatives ever been diagnosed with diabetes?"
+                    android:textColor="#000" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Check ALL that apply."
+                    android:textColor="#DD3E3E" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/checkBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mother" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Father" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Brothers/Sisters" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Children" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Other" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No/don't know" />
+
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11.Please check off which of the following ethnic groups your biological (blood) parents belong to:"
+                    android:textColor="#000" />
+            </TableRow>
+
+            <TableRow>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=" Mother"
+                            android:textColor="#dd3e3e" />
+
+                        <RadioGroup
+                            android:id="@+id/rg11m"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/rg11b1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="White (Caucasian)" />
+
+                            <RadioButton
+                                android:id="@+id/rg11b2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Aboriginal" />
+
+                            <RadioButton
+                                android:id="@+id/rg11b3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Black (Afro-Caribbean)" />
+
+                            <RadioButton
+                                android:id="@+id/rg11b4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="East Asian" />
+
+                            <RadioButton
+                                android:id="@+id/rg11b5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="South Asian" />
+
+                            <RadioButton
+                                android:id="@+id/rg11b6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Other non-white" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView59"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=" Father"
+                            android:textColor="#dd3e3e" />
+
+                        <RadioGroup
+                            android:id="@+id/rg11f"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/rg11xb1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="White (Caucasian)" />
+
+                            <RadioButton
+                                android:id="@+id/rg12xb2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Aboriginal" />
+
+                            <RadioButton
+                                android:id="@+id/rg11xb3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Black (Afro-Caribbean)" />
+
+                            <RadioButton
+                                android:id="@+id/rg11xb4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="East Asian" />
+
+                            <RadioButton
+                                android:id="@+id/rg11xb5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="South Asian" />
+
+                            <RadioButton
+                                android:id="@+id/rg11xb6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Other non-white" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12.What is the highest level of education that you have completed?"
+                    android:textColor="#000" />
+            </TableRow>
+
+            <TableRow>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rg12">
+
+                    <RadioButton
+                        android:id="@+id/rg12b1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Some high school or less" />
+
+                    <RadioButton
+                        android:id="@+id/rg12b2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="High school diploma" />
+
+                    <RadioButton
+                        android:id="@+id/rg12b3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Some college or university " />
+
+                    <RadioButton
+                        android:id="@+id/rg12b4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="University or college degree" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:text="Complete the Survey" />
+            </TableRow>
+
+
+        </TableLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
